@@ -5,7 +5,7 @@ def stock_picker (range)
 
     0.upto((range.length - 2)) do |idx1|
         1.upto((range.length - 1)) do |idx2|
-            if (idx1 != idx2) && (idx1 < idx2)
+            if idx1 < idx2
                 total = (range[idx2] - range[idx1])
                 if total > profit
                     profit = total
